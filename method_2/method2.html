@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moje Bakalářka</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<h1>Frequency Data - getFloatFrequencyData</h1>
+<div class="control">
+    <div class="buttons">
+        <button id="toggle" class="button" title="Mute and unmute the sound of oscillator">
+            mute/unmute
+        </button>
+
+        <button id="show" class="button" title="Render FFT data in canvas">
+            FFT
+        </button>
+
+        <button id="up" class="button" title="Change frequency of oscillator up by 50">
+            &uarr;
+        </button>
+
+        <button id="down" class="button" title="Change frequency of oscillator down by 50">
+            &darr;
+        </button>
+
+        <a href="../index.html">
+            <button id="backToMenu" class="button" title="Returns back to menu">
+                Menu
+            </button>
+        </a>
+
+        <button id="upMobile" class="button mobile" title="Change frequency of oscillator up by 1">
+            +
+        </button>
+
+        <button id="downMobile" class="button mobile" title="Change frequency of oscillator down by 1">
+            -
+        </button>
+
+        <button id="stopMobile" class="button mobile" title="Stop watches">
+            stop
+        </button>
+    </div>
+    <div class="inputs">
+        <label for="fftSize">Choose FFT size</label>
+        <select id="fftSize">
+            <!--<option value="32">32</option>-->
+            <!--<option value="64">64</option>-->
+            <!--<option value="128">128</option>-->
+            <!--<option value="256">256</option>-->
+            <!--<option value="512">512</option>-->
+            <!--<option value="1024">1024</option>-->
+            <!--<option value="2048">2048</option>-->
+            <!--<option value="4096">4096</option>-->
+            <!--<option value="8192">8192</option>-->
+            <!--<option value="16384">16384</option>-->
+            <option value="32768" selected>32768</option>
+        </select>
+
+        <label for="soundType">Select a waveform:</label>
+        <select name="soundType" id="soundType">
+            <option value="triangle">Triangle</option>
+            <option value="sine" selected>Sine</option>
+            <option value="square">Square</option>
+            <option value="sawtooth">Sawtooth</option>
+        </select>
+
+        <label for="smoothingConst">Select a smoothing constant:</label>
+        <input type="range" name="smoothingConst" id="smoothingConst" min="0" max="1" step="any" value="0.8">
+    </div>
+</div>
+<div class="info">
+    <p id="frequency"></p>
+    <p id="maximum">Current maximum index: </p>
+    <p id="found">Current maximum index: </p>
+    <p id="time">Time between frequency change and steady state: </p>
+    <p id="arrayFill">Time for filling array: </p>
+    <p id="oneFrame">Time for one frame: </p>
+</div>
+<canvas id="myCanvas" width="600" height="300"></canvas>
+<div class="howToUse">
+    <p>Use arrows up/down to handle frequency</p>
+    <p>The watch starts when changing the frequency, use space to stop and show the result</p>
+    <p>Different buttons will appear for mobile devices</p>
+</div>
+<script type="module" src="webaudioscript.js"></script>
+</body>
+</html>

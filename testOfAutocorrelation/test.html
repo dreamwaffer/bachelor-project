@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moje Bakalářka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Autocorrelation</h1>
+<div class="control">
+    <div class="buttons">
+        <button id="toggle" class="button" title="count autocorrelation">
+            Count autocorrelation for current frequency
+        </button>
+
+        <button id="show" class="button" title="count autocorrelation">
+            Show diffs
+        </button>
+
+        <a href="../index.html">
+            <button id="backToMenu" class="button" title="Returns back to menu">
+                Menu
+            </button>
+        </a>
+    </div>
+</div>
+<div class="info">
+    <p id="frequency"></p>
+    <p id="diffs"></p>
+</div>
+<div class="howToUse">
+    <p>Use arrows up/down to handle frequency, methods will be compared, result in console.</p>
+    <p>Show diff will show number of wrong detections.</p>
+</div>
+<script src="autocorrelation.js"></script>
+</body>
+</html>

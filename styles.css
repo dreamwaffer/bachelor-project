@@ -1,0 +1,68 @@
+.souhrn, .eq { /*show*/
+    display: none;
+}
+
+.button {
+    display: inline-block;
+    height: 57px;
+    width: 57px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: lightgray;
+    transition: 0.25s;
+    margin-bottom: 5px;
+}
+
+#toggle {
+    width: 114px;
+}
+
+.buttons, .inputs {
+    display: inline-block;
+    width: 100%;
+}
+
+p, label {
+    font: 400 13.3333px Arial;
+}
+
+.info p{
+    font-weight: bold;
+}
+
+.mobile {
+    display: none;
+}
+
+/* main page */
+.content {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.method {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    margin-top: 13%;
+    margin-right: 30px;
+}
+
+.method h2 {
+    margin-top: 110px;
+}
+
+@media only screen
+and (max-device-width: 600px)
+{
+    .mobile {
+        display: inline-block;
+    }
+}

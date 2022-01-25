@@ -1,0 +1,9 @@
+.button {
+    display: inline-block;
+    height: 57px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: lightgray;
+    transition: 0.25s;
+    margin-bottom: 5px;
+}
