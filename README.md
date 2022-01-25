@@ -1,10 +1,7 @@
 Výstup předmětu semestrální projekt (B6B36PRO)
 Vedoucí: RNDr. Ondřej Žára
 
-www.mojebakalarka.8u.cz
-
 Zimní semestr 2018/2019
 
-Metoda 1 - používá frekvenční data z AnalyserNodu a metodu getByteFrequencyData
+All info about this thesis can be found on: https://dspace.cvut.cz/handle/10467/82333
 
-Metoda 2 - používá frekvenční data z AnalyserNodu a metodu getFloatFrequencyData
